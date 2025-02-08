@@ -1,6 +1,6 @@
-import About from "./components/organisms/About"
-import Hero from "./components/organisms/Hero"
-import Projects from "./components/organisms/Projects"
+import About from "../components/organisms/About"
+import Hero from "../components/organisms/Hero"
+import Projects from "../components/organisms/Projects"
 
 export default function Home() {
   return (
