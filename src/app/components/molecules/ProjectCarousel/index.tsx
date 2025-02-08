@@ -1,13 +1,13 @@
 "use client"
-import useEmblaCarousel from "embla-carousel-react"
-import "./styles.scss"
-import Image from "next/image"
-import { useCallback, useEffect, useRef } from "react"
 import {
   EmblaCarouselType,
   EmblaEventType,
   EmblaOptionsType,
 } from "embla-carousel"
+import useEmblaCarousel from "embla-carousel-react"
+import Image from "next/image"
+import { useCallback, useEffect, useRef } from "react"
+import "./styles.scss"
 
 const TWEEN_FACTOR_BASE = 0.2
 
@@ -90,7 +90,7 @@ const ProjectCarousel: React.FC<TCarouselProps> = (props) => {
       .on("reInit", tweenParallax)
       .on("scroll", tweenParallax)
       .on("slideFocus", tweenParallax)
-  }, [emblaApi, tweenParallax])
+  }, [emblaApi, tweenParallax, setTweenNodes, setTweenFactor])
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
