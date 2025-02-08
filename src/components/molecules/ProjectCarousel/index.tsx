@@ -11,13 +11,15 @@ type TCarouselProps = {
     title: string
     description: string
     image: string
+    url?: string
+    internalLink?: boolean
   }[]
   options?: EmblaOptionsType
 }
 
 const ProjectCarousel: React.FC<TCarouselProps> = (props) => {
   const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const [emblaRef] = useEmblaCarousel(options)
 
   return (
     <section className="embla w-full cursor-grab">
