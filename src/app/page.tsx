@@ -7,7 +7,7 @@ import Experience from "@/components/organisms/Experience"
 export default function Home() {
   return (
     <div className="">
-      <main className="">
+      <main className="overflow-x-clip">
         <Hero hasContactLinks>
           <div className="transform translate-y-[20%]">
             <TaylerBurkeSVG />

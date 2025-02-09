@@ -6,7 +6,7 @@ const Hero: FC<{
   hasContactLinks?: boolean
 }> = ({ hasContactLinks = false, children }) => {
   return (
-    <div className="flex flex-col items-center justify-end bg-blue-darkest h-screen w-screen relative">
+    <div className="flex flex-col items-center justify-end bg-blue-darkest h-screen w-screen relative text-white">
       {hasContactLinks && (
         <div className="flex flex-col items-end justify-end absolute top-8 right-8">
           <a
