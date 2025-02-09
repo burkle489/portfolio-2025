@@ -2,6 +2,7 @@ import { FC } from "react"
 import Image from "next/image"
 import "../../molecules/ProjectCarousel/styles.scss"
 import { FaArrowRightLong } from "react-icons/fa6"
+import Link from "../Link"
 
 export type TProjectCardProps = {
   id: number
@@ -17,10 +18,9 @@ const ProjectCard: FC<{
 }> = ({ slide }) => {
   return (
     <div className="embla__slide transition-all duration-300 flex flex-col gap-4">
-      <a
-        href={slide.url}
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        isInternal={slide.internalLink}
+        href={slide.url ?? ""}
         className="h-full w-full"
       >
         <div className="group relative h-full w-full overflow-hidden aspect-video">
@@ -37,7 +37,7 @@ const ProjectCard: FC<{
             <div className=" z-20 w-full h-full flex flex-col justify-center items-center absolute top-0 bg-black/50 left-0 p-4"></div>
           </div>
         </div>
-      </a>
+      </Link>
       <div className=" max-w-lg flex flex-col gap-2 h-full">
         <h3 className="text-3xl font-bold text-black">{slide.title}</h3>
         <p className="text-xl text-black">{slide.description}</p>

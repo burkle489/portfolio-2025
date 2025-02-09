@@ -1,10 +1,10 @@
 import { FC } from "react"
 import { FaArrowRightLong } from "react-icons/fa6"
 
-const Hero: FC<{ children: React.ReactNode; hasContactLinks?: boolean }> = ({
-  hasContactLinks = false,
-  children,
-}) => {
+const Hero: FC<{
+  children: React.ReactNode
+  hasContactLinks?: boolean
+}> = ({ hasContactLinks = false, children }) => {
   return (
     <div className="flex flex-col items-center justify-end bg-blue-darkest h-screen w-screen relative">
       {hasContactLinks && (
