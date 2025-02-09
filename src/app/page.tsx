@@ -2,6 +2,7 @@ import TaylerBurkeSVG from "@/components/atoms/SVGs/TaylerBurkeSVG"
 import About from "../components/organisms/About"
 import Hero from "../components/organisms/Hero"
 import Projects from "../components/organisms/Projects"
+import Experience from "@/components/organisms/Experience"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           businesses, I offer more than just writing code.
         </About>
         <Projects />
+        <Experience />
       </main>
     </div>
   )

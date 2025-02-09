@@ -6,7 +6,7 @@ export const projects = [
   //   image: "/images/placeholder-project.webp",
   // },
   {
-    id: 3,
+    id: 2,
     title: "PUBG: Squad Battle Scoreboard",
     description: "Next.js / PostgreSQL / PrismaORM / TypeScript",
     image: "/images/projects/squad-battles.png",
@@ -14,18 +14,18 @@ export const projects = [
     internalLink: true,
   },
   {
-    id: 2,
-    title: "Supervive",
-    description: "Next.js / TypeScript / Tailwind",
-    image: "/images/projects/supervive2.jpg",
-    url: "https://www.playsupervive.com/",
-  },
-  {
-    id: 4,
+    id: 3,
     title: "Headbangers: Rhythm Royale",
     description: "Next.js / TypeScript / Tailwind",
     image: "/images/projects/headbangers.webp",
     url: "https://www.headbangers.game/",
+  },
+  {
+    id: 4,
+    title: "Supervive",
+    description: "Next.js / TypeScript / Tailwind",
+    image: "/images/projects/supervive2.jpg",
+    url: "https://www.playsupervive.com/",
   },
   {
     id: 5,
