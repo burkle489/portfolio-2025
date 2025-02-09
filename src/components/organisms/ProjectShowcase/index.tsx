@@ -12,7 +12,6 @@ const ProjectShowcase = () => {
               className="object-cover w-full h-full"
             />
           </div>
-
           <div className="col-span-3 overflow-hidden relative aspect-video">
             <Image
               src={

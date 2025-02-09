@@ -28,3 +28,14 @@
   justify-content: center;
   user-select: none;
 }
+
+@media (max-width: 768px) {
+  .embla__slide {
+    flex: 0 0 100% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 85%;
+  }
+}
