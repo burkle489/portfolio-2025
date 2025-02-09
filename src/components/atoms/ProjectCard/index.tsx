@@ -1,7 +1,7 @@
 import { FC } from "react"
-import { FaLocationArrow } from "react-icons/fa"
 import Image from "next/image"
 import "../../molecules/ProjectCarousel/styles.scss"
+import { FaArrowRightLong } from "react-icons/fa6"
 
 export type TProjectCardProps = {
   id: number
@@ -32,7 +32,7 @@ const ProjectCard: FC<{
           />
           <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 absolute top-0 left-0 h-full w-full flex justify-center items-center z-10">
             <div className="rounded-full bg-blue-lightest/90 w-0 h-0 group-hover:w-20 group-hover:h-20 transition-all duration-500 relative z-30 flex justify-center items-center">
-              <FaLocationArrow className="text-blue-darkest/90 text-sm group-hover:text-2xl transition-all duration-500" />
+              <FaArrowRightLong className="text-blue-darkest/90 -rotate-45 group-hover:rotate-0 delay-150 text-2xl group-hover:text-3xl transition-all duration-500" />
             </div>
             <div className=" z-20 w-full h-full flex flex-col justify-center items-center absolute top-0 bg-black/50 left-0 p-4"></div>
           </div>

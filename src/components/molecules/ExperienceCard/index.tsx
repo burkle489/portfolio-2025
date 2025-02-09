@@ -1,3 +1,5 @@
+import { FaArrowRightLong } from "react-icons/fa6"
+
 type TExperienceCardProps = {
   role: string
   company: string
@@ -25,9 +27,12 @@ const ExperienceCard = ({
           <h3 className="text-3xl md:text-4xl">{role}</h3>
           <h4 className="text-2xl md:text-3xl text-blue-light">{company}</h4>
         </div>
-        <h5 className="text-xl md:text-2xl">
-          {startDate} - {endDate}
-        </h5>
+        <div className="flex flex-col items-end gap-1">
+          <FaArrowRightLong className="text-blue-lightest group-hover:text-blue-darkest -rotate-45 group-hover:rotate-0 transition-all text-2xl duration-300 ease-in-out" />
+          <h5 className="text-xl md:text-2xl">
+            {startDate} - {endDate}
+          </h5>
+        </div>
       </div>
     </a>
   )

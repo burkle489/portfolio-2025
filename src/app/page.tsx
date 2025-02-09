@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="">
       <main className="">
-        <Hero>
+        <Hero hasContactLinks>
           <div className="transform translate-y-[20%]">
             <TaylerBurkeSVG />
           </div>
