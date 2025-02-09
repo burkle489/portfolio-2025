@@ -2,7 +2,7 @@ import About from "@/components/organisms/About"
 
 import SquadBattleSVG from "@/components/atoms/SVGs/SquadBattleSVG"
 import Hero from "@/components/organisms/Hero"
-import ProjectShowcase from "@/components/organisms/ProjectShowcase"
+import WorkShowcase from "@/components/organisms/WorkShowcase"
 import { FaArrowLeftLong } from "react-icons/fa6"
 import Link from "next/link"
 
@@ -27,7 +27,7 @@ const PUBGSquadBattlePage = () => {
         The app included authentication, event & team creation as well as
         scoring customization.
       </About>
-      <ProjectShowcase />
+      <WorkShowcase />
     </main>
   )
 }

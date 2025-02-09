@@ -1,10 +1,10 @@
 import { FC } from "react"
 import Image from "next/image"
-import "../../molecules/ProjectCarousel/styles.scss"
+import "../../molecules/WorkCarousel/styles.scss"
 import { FaArrowRightLong } from "react-icons/fa6"
 import Link from "../Link"
 
-export type TProjectCardProps = {
+export type TWorkCardProps = {
   id: number
   title: string
   description: string
@@ -13,8 +13,8 @@ export type TProjectCardProps = {
   internalLink?: boolean
 }
 
-const ProjectCard: FC<{
-  slide: TProjectCardProps
+const WorkCard: FC<{
+  slide: TWorkCardProps
 }> = ({ slide }) => {
   return (
     <div className="embla__slide transition-all duration-300 flex flex-col gap-4">
@@ -46,4 +46,4 @@ const ProjectCard: FC<{
   )
 }
 
-export default ProjectCard
+export default WorkCard

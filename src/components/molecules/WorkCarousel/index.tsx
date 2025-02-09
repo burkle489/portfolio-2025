@@ -1,15 +1,15 @@
 "use client"
-import ProjectCard, { TProjectCardProps } from "@/components/atoms/ProjectCard"
+import WorkCard, { TWorkCardProps } from "@/components/atoms/WorkCard"
 import { EmblaOptionsType } from "embla-carousel"
 import useEmblaCarousel from "embla-carousel-react"
 import "./styles.scss"
 
 type TCarouselProps = {
-  slides: TProjectCardProps[]
+  slides: TWorkCardProps[]
   options?: EmblaOptionsType
 }
 
-const ProjectCarousel: React.FC<TCarouselProps> = (props) => {
+const WorkCarousel: React.FC<TCarouselProps> = (props) => {
   const { slides, options } = props
   const [emblaRef] = useEmblaCarousel(options)
 
@@ -18,7 +18,7 @@ const ProjectCarousel: React.FC<TCarouselProps> = (props) => {
       <div className="embla__viewport w-full" ref={emblaRef}>
         <div className="embla__container w-full">
           {slides.map((slide, index) => (
-            <ProjectCard slide={slide} key={index} />
+            <WorkCard slide={slide} key={index} />
           ))}
         </div>
       </div>
@@ -26,4 +26,4 @@ const ProjectCarousel: React.FC<TCarouselProps> = (props) => {
   )
 }
 
-export default ProjectCarousel
+export default WorkCarousel

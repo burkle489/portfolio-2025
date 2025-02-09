@@ -1,7 +1,7 @@
 import TaylerBurkeSVG from "@/components/atoms/SVGs/TaylerBurkeSVG"
 import About from "../components/organisms/About"
 import Hero from "../components/organisms/Hero"
-import Projects from "../components/organisms/Projects"
+import Work from "../components/organisms/Work"
 import Experience from "@/components/organisms/Experience"
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
           cornerstone of my workflow. With previous experience running
           businesses, I offer more than just writing code.
         </About>
-        <Projects />
+        <Work />
         <Experience />
       </main>
     </div>
