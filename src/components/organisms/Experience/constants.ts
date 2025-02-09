@@ -1,7 +1,7 @@
 export const experience = [
   {
     id: 1,
-    role: "Senior Full Stack Developer",
+    role: "Senior Full-Stack Developer",
     company: "Fluid",
     startDate: "Oct 2023",
     endDate: "Present",
