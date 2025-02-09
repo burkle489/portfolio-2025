@@ -2,16 +2,18 @@ export const experience = [
   {
     id: 1,
     role: "Senior Full Stack Developer",
-    company: "Fluid Studio",
+    company: "Fluid",
     startDate: "Oct 2023",
     endDate: "Present",
+    url: "https://www.fluidstudio.co.uk/",
   },
   {
     id: 2,
     role: "Web Developer",
-    company: "Fluid Studio",
+    company: "Fluid",
     startDate: "Aug 2022",
     endDate: "Oct 2023",
+    url: "https://www.fluidstudio.co.uk/",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const experience = [
     company: "Equator",
     startDate: "Jan 2022",
     endDate: "Aug 2022",
+    url: "https://www.eqtr.com/",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const experience = [
     company: "AVAMAE",
     startDate: "Jun 2020",
     endDate: "Dec 2021",
+    url: "https://www.avamae.co.uk/",
   },
   {
     id: 5,
@@ -33,5 +37,6 @@ export const experience = [
     company: "WeTeachCRO",
     startDate: "Oct 2019",
     endDate: "Jun 2020",
+    url: "https://www.linkedin.com/company/weteachcro/",
   },
 ]
